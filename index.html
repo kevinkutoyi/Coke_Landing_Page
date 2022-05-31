@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+    
+    <header>
+        <a href="#"><img src="logo.png" class="logo"></a>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Contact</a></li>
+            
+        </ul>
+    </header>
+    <div class="content">
+        <div class="textBox">
+            <h2>Taste the Feeling</h2>
+            <p>The Coca-Cola Company is a multinational beverage corporation 
+                incorporated under Delaware's General Corporation Law and headquartered 
+                in Atlanta, Georgia. The Coca-Cola Company has interests in the manufacturing, 
+                retailing, and marketing of non-alcoholic beverage concentrates and syrups, 
+                and alcoholic beverages
+            </p>
+            <p id="message">Click on the product image and move it left and right to see all products</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="imgBox">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="cocacola1.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="cocacola2.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="cocacola3.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="cocacola4.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="cocacola5.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="cocacola6.png" />
+                  </div>
+                </div>     
+        </div>
+    </div>
+    <ul class="sci">
+        <li><a href="#"><img src ="facebook.png"></a></li>
+        <li><a href="#"><img src ="twitter.png"></a></li>
+        <li><a href="#"><img src ="instagram.png"></a></li>
+    </ul>
+</section>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      loop: true,
+    });
+  </script>
+</body>
+</html>
